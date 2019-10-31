@@ -8,11 +8,14 @@ body {
     height: 80px;
     background-color: #4e535c
 }
+.logo {
+    
+}
 .jumbotron {
     width: 100%; 
 }
 
-img {
+.wrap-image {
     width: 100%; 
 
 }
