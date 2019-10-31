@@ -8,5 +8,13 @@ body {
 .jumbotron {
     height: 100px;
     width: 100%;
-    background-image: succ;
+    
+}
+
+img {
+    width: 100%; 
+}
+.welcome-text {
+   flex: display;
+   
 }
