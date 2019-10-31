@@ -1,0 +1,12 @@
+body {
+    background-color: #35393f;
+}
+.navigation-bar {
+    height: 80px;
+    background-color: #4e535c
+}
+.jumbotron {
+    height: 100px;
+    width: 100%;
+    background-image: succ;
+}
