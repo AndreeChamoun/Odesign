@@ -13,7 +13,7 @@ body {
     position: sticky;
 }
 .logo-text {
-    
+    margin-bottom: 13px;
 }
 .jumbotron {
     width: 100%; 
