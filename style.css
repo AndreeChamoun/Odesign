@@ -16,3 +16,12 @@ img {
     width: 100%; 
 
 }
+
+.welcome-text {
+    margin: 20px; 
+}
+
+.candle {
+    border: solid #8E7D61;
+    margin: 20px; 
+}
