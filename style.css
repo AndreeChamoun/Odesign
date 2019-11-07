@@ -48,10 +48,9 @@ main {
 
 .shop {
     display: flex; 
-<<<<<<< Updated upstream
-=======
     flex-direction: row; 
     justify-content: center;
+    width: 100%; 
 }
 
 .shoprow1 {
@@ -108,5 +107,82 @@ main {
 .rifleCar {
     border: solid #8E7D61;
     margin-top: 60px;
->>>>>>> Stashed changes
 }
+
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 40px; 
+    }
+
+    main {
+        margin-left: 100px; 
+        margin-right: 100px; 
+    }
+
+    .shopImage {
+        width: 300px; 
+        border: solid 1px #8E7D61;
+    }
+
+    .candle {
+    
+    }
+
+    .shop {
+        display: flex; 
+        width: 100%; 
+    }
+
+    .shoprow1 {
+        display: flex;
+        margin-right: 0px; 
+    }
+    
+    .shoprow2 {
+        display: flex;
+        margin-left: 0px; 
+    }
+
+    .itemSquare {
+        margin: 10px; 
+    }
+
+    .infoBox {
+        margin-top: 20px;
+        font-size: 25px; 
+        background-color:#8E7D61;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+    
+    .infoBoxText {
+        padding: 10px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        margin-right: 5px; 
+    }
+
+    .text-container {
+        font-size: 40px; 
+    
+
+    }
+    
+    .breadText {
+        font-size: 25px; 
+    }
+
+    .rifleCar {
+        border: solid #8E7D61;
+        margin-top: 100px;
+    }
+
+    .gold {
+        text-align: center;
+    }
+  
+
+
+  }
