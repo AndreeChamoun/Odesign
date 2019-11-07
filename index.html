@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Markazi+Text:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css@11.0.0/sanitize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -16,9 +18,52 @@
         <img class="logo" src="O bilder/Group1.svg" alt=""> 
         <img class="logo-text"src="O bilder/Group 7design2_test.svg" alt="">
     </nav>
-    <div class="jumbotron">
-        <img class="wrap-image" src="O bilder/fat.jpg" alt="">
-    </div>
+    <div id="masterhead">
+            <div class="container">
+              <div class="slideshow">
+                <div id="slideshow" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="img-responsive" src="/O bilder/fat.jpg" alt="First Slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <!-- /. Item Active -->
+                    <div class="item">
+                      <img class="img-responsive" src="/O bilder/fat.jpg" alt="Second Slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <!-- /. Item -->
+                    <div class="item">
+                      <img class="img-responsive" src="/O bilder/fat.jpg"alt="Third slide">
+                      <div class="container">
+                      </div>
+                    </div>
+                    <!-- /. Item -->
+                  </div>
+                  <!-- /. Carousel-Inner -->
+                  <div class="controlsBlock">
+                    <div class="controls">
+                      <a class="left carousel-control" href="#slideshow" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                      <a class="right carousel-control" href="#slideshow" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <!--<a class="left carousel-control" href="#slideshow" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+           <a class="right carousel-control" href="#slideshow" data-slide="next"><i class="fa fa-chevron-right"></i></a>-->
+                      <div class="carousel-indicators">
+                        <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideshow" data-slide-to="1"></li>
+                        <li data-target="#slideshow" data-slide-to="2"></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /# Slideshow .Carousel -->
+              </div>
+              <!-- /. Slideshow -->
+            </div>
+            <!-- /. Container -->
+          </div>
+          <!-- /# Mastehead -->
     <main>
         <div class="text-container">
             <p>- Vi designar unika produkter och livsstildetaljer med fokus på tomhylsor från ammunition</p>
