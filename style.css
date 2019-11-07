@@ -14,6 +14,7 @@ body {
 }
 .logo-text {
     margin-bottom: 13px;
+    width: 36%;
 }
 .jumbotron {
     width: 100%; 
