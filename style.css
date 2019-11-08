@@ -4,6 +4,11 @@ body {
     color: #ECEBEB;
     font-size: 25px; 
 }
+
+main {
+    margin: 20px; 
+}
+
 .navigation-bar {
     height: 80px;
     background-color: #4e535c
@@ -25,11 +30,166 @@ body {
 
 }
 
-.welcome-text {
-    margin: 20px; 
+.text-container {
 }
 
 .candle {
     border: solid #8E7D61;
+}
+
+.gold {
+    color: #8E7D61;
+    text-shadow: -1px 0 black;
+}
+
+.breadText {
+    font-size: 18px; 
+}
+
+.shopImage {
+    width: 150px; 
+    border: solid 1px #8E7D61;
+}
+
+.shop {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%; 
+}
+
+.shoprow1 {
+    margin-right: 10px; 
+}
+
+.shoprow2 {
+    margin-left: 10px; 
+}
+
+
+.buyButton {
+    font-size: 18px; 
+    background-color:#8E7D61;
+    color: black; 
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.productName {
+    font-size: 18px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.itemSquare {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+
+}
+
+.infoBox {
+    margin-top: 20px;
+    font-size: 18px; 
+    background-color:#8E7D61;
+    width: 100%; 
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+.infoBoxText {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-right: 5px; 
+}
+
+.rifleCar {
+    border: solid #8E7D61;
+    margin-top: 60px;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 40px; 
+    }
+
+    main {
+        margin-left: 100px; 
+        margin-right: 100px; 
+    }
+
+    .shopImage {
+        width: 300px; 
+        border: solid 1px #8E7D61;
+    }
+
+    .candle {
+    
+    }
+
+    .shop {
+        display: flex; 
+        width: 100%; 
+    }
+
+    .shoprow1 {
+        display: flex;
+        margin-right: 0px; 
+    }
+    
+    .shoprow2 {
+        display: flex;
+        margin-left: 0px; 
+    }
+
+    .itemSquare {
+        margin: 10px; 
+    }
+
+    .infoBox {
+        margin-top: 20px;
+        font-size: 25px; 
+        background-color:#8E7D61;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+    
+    .infoBoxText {
+        padding: 10px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        margin-right: 5px; 
+    }
+
+    .text-container {
+        font-size: 40px; 
+    
+
+    }
+    
+    .breadText {
+        font-size: 25px; 
+    }
+
+    .rifleCar {
+        border: solid #8E7D61;
+        margin-top: 100px;
+    }
+
+    .gold {
+        text-align: center;
+    }
+  
+
+
+  }
     margin: 20px; 
 }
