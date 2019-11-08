@@ -14,7 +14,12 @@ main {
     background-color: #4e535c
 }
 .logo {
-    
+    width: 24%;
+    position: sticky;
+}
+.logo-text {
+    margin-bottom: 13px;
+    width: 36%;
 }
 .jumbotron {
     width: 100%; 
@@ -186,3 +191,5 @@ main {
 
 
   }
+    margin: 20px; 
+}
