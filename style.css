@@ -5,9 +5,9 @@ body {
     font-size: 25px; 
 }
 
-#masterhead {
-    padding-bottom: 124px;
-    margin-bottom: -52px;
+.masterhead {
+    padding-bottom: 35%;
+    margin-bottom: -14%;
 }
 
 .carousel {
@@ -19,6 +19,7 @@ body {
       position: relative;
       width: 100%;
       overflow: hidden;
+      height: 183%;
 }
 
 .carousel-inner > .item {
@@ -37,8 +38,8 @@ body {
      position: absolute;
      top: 0;
      left: 0;
-     min-width: 100%;
-     height: 150px;
+     width: 100%;
+     height: 183%;
 }
 
 .carousel-inner > .active,
@@ -196,47 +197,13 @@ left: -100%;
 .carousel-caption .btn {
     text-shadow: none;
 }
-
-@media screen and (min-width: 768px) {
-  .carousel {
-      height: 500px;
-  }
-
-  .carousel-inner > .item {
-      height: 500px;
-  }
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      height: 500px;
-  }
-
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-prev,
-    .carousel-control .icon-next {
-          
-          font-size: 15px;
-    }
-
-    .carousel-caption {
-          right: 20%;
-          left: 20%;
-          padding-bottom: 30px;
-    }
-
-    .carousel-indicators {
-          bottom: .0;
-    }
-}
-
     
 main {
     margin: 20px; 
 }
 
 .navigation-bar {
-    height: 80px;
+    height: 120px;
     background-color: #4e535c
 }
 .logo {
@@ -248,9 +215,17 @@ main {
     margin-bottom: 13px;
     width: 36%;
 }
-.jumbotron {
-    width: 100%; 
+.menu {
+ float: right;
+
+ margin-right: 6%;
+
+ margin-top: 6%;
 }
+.container {
+    height: 229px;
+}
+
 
 .wrap-image {
     width: 100%; 
@@ -343,9 +318,69 @@ main {
 
 @media only screen and (min-width: 800px) {
     body {
-        font-size: 40px; 
+        height:100%;
+        width: 100%;
+        font-size: 250%; 
     }
-
+    .navigation-bar {
+        height:80px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        display: inline-block;
+      }
+      
+      .nav-links {
+        list-style: none;
+        display: flex;
+        width: 100%;
+      }
+      .nav-item {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .nav-item a {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        justify-content: space-between;
+      }
+      
+      .nav-item:hover {
+        background-color: white;
+      }
+      
+      .nav-item:hover a {
+        color: #8E7D61;
+      }
+    .masterhead {
+        padding-bottom: 35%;
+        margin-bottom: -14%;
+    }
+    .logo {
+        display:none;
+    }
+    .logo-text {
+        display:none;
+    }
+    .carousel-inner {
+        overflow: visible;
+    }
+    .menu {
+        display:none;
+    }
     main {
         margin-left: 100px; 
         margin-right: 100px; 
@@ -398,8 +433,6 @@ main {
 
     .text-container {
         font-size: 40px; 
-    
-
     }
     
     .breadText {
@@ -414,8 +447,45 @@ main {
     .gold {
         text-align: center;
     }
+    .carousel {
+        height:50%;
+    }
+    .slideshow {
+      height:640px;
+    }
+    .masterhead {
+        height: 975px;
+    }
   
-
+    .carousel-inner > .item {
+        height: 500px;
+    }
+  
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        height: 123%;
+    }
+  
+      .carousel-control .glyphicon-chevron-left,
+      .carousel-control .glyphicon-chevron-right,
+      .carousel-control .icon-prev,
+      .carousel-control .icon-next {
+            
+            font-size: 15px;
+      }
+  
+      .carousel-caption {
+            right: 20%;
+            left: 20%;
+            padding-bottom: 30px;
+      }
+  
+      .carousel-indicators {
+            bottom: .0;
+      }
+    .container {
+        height:100%;
+      }
 
   }
 
