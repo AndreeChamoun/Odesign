@@ -324,12 +324,9 @@ main {
     }
     .navigation-bar {
         height:80px;
-        display: flex;
-        justify-content: space-between;
-        
+        width:100%;
     }
     nav {
-        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -340,14 +337,25 @@ main {
       }
       
       .nav-links {
-        list-style: none;
-        display: flex;
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
       }
       .nav-item {
         width: 25%;
         display: flex;
         justify-content: center;
+        align-items: center;
+      }
+      .nav li {
+          display: inline-block;
+          width: 25%;
+          margin: 0;
+          padding: 0;
+          justify-content: center;
       }
       
       .nav-item a {
@@ -356,10 +364,12 @@ main {
         text-decoration: none;
         color: white;
         justify-content: space-between;
+        padding-left: 38%;
+        width: 100%;
       }
       
       .nav-item:hover {
-        background-color: white;
+        background-color: #35393F;
       }
       
       .nav-item:hover a {
