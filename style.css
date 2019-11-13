@@ -11,21 +11,27 @@ body {
     padding-bottom: 10%;
 }
 
+.masterhead {
+    padding-bottom: 35%;
+    margin-bottom: -14%;
+}
+
 .carousel {
       position: relative;
-      height: 250px;
+      height: 150px;
 }
 
 .carousel-inner {
       position: relative;
       width: 100%;
       overflow: hidden;
+      height: 183%;
 }
 
 .carousel-inner > .item {
       position: relative;
       display: none;
-      height: 250px;
+      height: 150px;
       background-color: #777;
     -webkit-transition: .6s ease-in-out left;
   -o-transition: .6s ease-in-out left;
@@ -38,8 +44,8 @@ body {
      position: absolute;
      top: 0;
      left: 0;
-     min-width: 100%;
-     height: 100%;
+     width: 100%;
+     height: 183%;
 }
 
 .carousel-inner > .active,
@@ -181,6 +187,119 @@ left: -100%;
     background-color: #000000;
 }
 
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption .btn {
+    text-shadow: none;
+}
+    
+main {
+    margin: 20px; 
+}
+
+.navigation-bar {
+    height: 65px;
+    background-color: #4e535c
+}
+.logo {
+    width: 24%;
+    position: sticky;
+    z-index:1;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    line-height: 1;
+     position: absolute;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     height: 100%;
+}
+.menu {
+ float: right;
+
+ margin-right: 6%;
+
+ margin-top: 6%;
+}
+.container {
+    height: 229px;
+}
+
+
+.wrap-image {
+    width: 100%; 
+
+.carousel-control:hover,
+.carousel-control:focus {
+    color: #000;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+    position: absolute;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left {
+    left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right {
+    right: 0;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    top: 10px;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+
+.carousel-indicators li {
+    display: inline-block;
+     zoom: 1;
+     width: 10px;
+     height: 10px;
+     margin: 0 2px;
+     background: transparent;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     border-radius: 50%;
+     border: 3px solid transparent;
+     -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+     -moz-box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+     box-shadow: rgba(0,0,0,0.5) 0 0 2px;
+     cursor: pointer;
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    background-color: #000000;
+}
+
 
 .carousel-caption .btn {
     text-shadow: none;
@@ -247,9 +366,263 @@ left: -100%;
 
 .shopImage {
     width: 150px; 
-    height: 100%; 
+    border: solid 1px #8E7D61;
 }
 
 .shop {
     display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    width: 100%; 
 }
+
+.shoprow1 {
+    margin-right: 10px; 
+}
+
+.shoprow2 {
+    margin-left: 10px; 
+}
+
+
+.buyButton {
+    font-size: 18px; 
+    background-color:#8E7D61;
+    color: black; 
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.productName {
+    font-size: 18px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.itemSquare {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+
+}
+
+.infoBox {
+    margin-top: 20px;
+    font-size: 18px; 
+    background-color:#8E7D61;
+    width: 100%; 
+    display: flex;
+    justify-content: right;
+    color: black;
+}
+
+.infoBoxText {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-right: 5px; 
+}
+
+.rifleCar {
+    border: solid #8E7D61;
+    margin-top: 60px;
+}
+.desktopgroup {
+   display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    body {
+        height:100%;
+        width: 100%;
+        font-size: 250%; 
+    }
+    .navigation-bar {
+        height:80px;
+        width:100%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .logo {
+        display: inline-block;
+      }
+      
+      .nav-links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .nav-item {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav li {
+          display: inline-block;
+          width: 25%;
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+      }
+      
+      .nav-item a {
+        display: inline-block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        justify-content: space-between;
+        padding-left: 38%;
+        width: 100%;
+      }
+      
+      .nav-item:hover {
+        background-color: #35393F;
+      }
+      
+      .nav-item:hover a {
+        color: #8E7D61;
+      }
+    .masterhead {
+        padding-bottom: 35%;
+        margin-bottom: -14%;
+    }
+    .logo {
+        display:none;
+    }
+    .logo-text {
+        display:none;
+    }
+    .carousel-inner {
+        overflow: hidden;
+        height:150%;
+    }
+    .menu {
+        display:none;
+    }
+    main {
+        margin-left: 100px; 
+        margin-right: 100px; 
+    }
+
+    .shopImage {
+        width: 300px; 
+        border: solid 1px #8E7D61;
+    }
+    .desktopgroup {
+        z-index: 12;
+        margin-top: 6%;
+    }
+    .candle {
+    
+    }
+
+    .shop {
+        display: flex; 
+        width: 100%; 
+    }
+
+    .shoprow1 {
+        display: flex;
+        margin-right: 0px; 
+    }
+    
+    .shoprow2 {
+        display: flex;
+        margin-left: 0px; 
+    }
+
+    .itemSquare {
+        margin: 10px; 
+    }
+
+    .infoBox {
+        margin-top: 20px;
+        font-size: 25px; 
+        background-color:#8E7D61;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+    
+    .infoBoxText {
+        padding: 10px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        margin-right: 5px; 
+    }
+
+    .text-container {
+        font-size: 40px; 
+    }
+    
+    .breadText {
+        font-size: 25px; 
+    }
+
+    .rifleCar {
+        border: solid #8E7D61;
+        margin-top: 100px;
+    }
+
+    .gold {
+        text-align: center;
+    }
+    .carousel {
+        height:50%;
+    }
+    .slideshow {
+      height:640px;
+    }
+    .masterhead {
+        height: 975px;
+    }
+  
+    .carousel-inner > .item {
+        height: 75%;
+    }
+  
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        height: auto;
+        width: 100%;
+        top: -30%;
+        
+    }
+  
+      .carousel-control .glyphicon-chevron-left,
+      .carousel-control .glyphicon-chevron-right,
+      .carousel-control .icon-prev,
+      .carousel-control .icon-next {
+            
+            font-size: 15px;
+      }
+  
+      .carousel-caption {
+            right: 20%;
+            left: 20%;
+            padding-bottom: 30px;
+      }
+  
+      .carousel-indicators {
+            bottom: .0;
+      }
+    .container {
+        height:100%;
+      }
+
+  }
+
