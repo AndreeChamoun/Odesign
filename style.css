@@ -524,6 +524,7 @@ main {
     .desktopgroup {
         z-index: 12;
         margin-top: 6%;
+        display: block;
     }
     .candle {
     
