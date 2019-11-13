@@ -203,7 +203,7 @@ main {
 }
 
 .navigation-bar {
-    height: 120px;
+    height: 65px;
     background-color: #4e535c
 }
 .logo {
@@ -315,6 +315,10 @@ main {
     border: solid #8E7D61;
     margin-top: 60px;
 }
+.desktopgroup {
+   display: none;
+}
+
 
 @media only screen and (min-width: 800px) {
     body {
@@ -386,7 +390,8 @@ main {
         display:none;
     }
     .carousel-inner {
-        overflow: visible;
+        overflow: hidden;
+        height:150%;
     }
     .menu {
         display:none;
@@ -400,7 +405,10 @@ main {
         width: 300px; 
         border: solid 1px #8E7D61;
     }
-
+    .desktopgroup {
+        z-index: 12;
+        margin-top: 6%;
+    }
     .candle {
     
     }
@@ -468,12 +476,15 @@ main {
     }
   
     .carousel-inner > .item {
-        height: 500px;
+        height: 75%;
     }
   
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
-        height: 123%;
+        height: auto;
+        width: 100%;
+        top: -30%;
+        
     }
   
       .carousel-control .glyphicon-chevron-left,
