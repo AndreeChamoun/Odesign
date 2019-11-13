@@ -21,6 +21,19 @@ body {
       width: 100%;
       overflow: hidden;
 }
+main {
+    margin: 20px; 
+    display: flex;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 0px; 
+}
+.navigation-bar {
+    height: 80px;
+    background-color: #4e535c
+}
 
 .carousel-inner > .item {
       position: relative;
@@ -227,29 +240,239 @@ left: -100%;
     position:absolute;
     z-index: 1;
 }
+.infocontainer {
+    display: flex; 
+    justify-content: center; 
+}
+
 .text-container {
 }
 
+.imagesPartTwo {
+
+}
+
 .candle {
+    border: solid #8E7D61; 
+}
+.braceletrain {
     border: solid #8E7D61;
+    margin-top: 20px; 
 }
 .wrap-image {
     width: 100%;
 }
 .gold {
     color: #8E7D61;
-    text-shadow: -1px 0 black;
+    text-shadow: -1px 0 black; 
 }
 
 .breadText {
     font-size: 18px; 
+    margin-top: 5px; 
 }
 
 .shopImage {
     width: 150px; 
-    height: 100%; 
+    border: solid 1px #8E7D61;
 }
 
 .shop {
     display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%; 
 }
+
+.shoprow1 {
+    margin-right: 3px; 
+}
+
+.shoprow2 {
+    margin-left: 3px; 
+}
+
+
+.buyButton {
+    font-size: 24px; 
+    background-color:#8E7D61;
+    color: black; 
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+.productName {
+    font-size: 24px; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+
+.itemSquare {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+
+}
+
+.infoBox {
+    margin-top: 20px;
+    font-size: 24px; 
+    border:solid #8E7D61;
+    width: 100%;  
+    display: flex;
+    justify-content: right;
+    color:#8E7D61;
+}
+
+.infoBoxText {
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-right: 5px; 
+}
+
+.part3 {
+    margin-top: 60px; 
+}
+
+.rifleCar {
+    border: solid #8E7D61;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 40px; 
+    }
+
+    main {
+        margin-left: 100px; 
+        margin-right: 100px; 
+    }
+
+    .shopImage {
+        width: 300px; 
+        border: solid 1px #8E7D61;
+    }
+
+    .candle {
+        margin-right: 10px;
+    }
+
+    .braceletrain {
+        margin-left: 10px;
+        margin-top: 0px; 
+    }
+
+    .shop {
+        display: flex; 
+        width: 100%; 
+        align-self: ;
+
+    }
+
+    .shoprow1 {
+        display: flex;
+        margin-right: 0px; 
+    }
+    
+    .shoprow2 {
+        display: flex;
+        margin-left: 0px; 
+    }
+
+    .itemSquare {
+        margin: 10px; 
+    }
+
+    .infoBox {
+        margin-top: 20px;
+        font-size: 25px; 
+        border:solid #8E7D61;
+        width: 30%; 
+        display: flex;
+        justify-content: center;
+        color:#8E7D61;
+    }
+
+    .infoBox1 {
+        margin-top: 20px;
+        font-size: 25px; 
+        width: 20%; 
+        display: flex;
+        justify-content: center;
+        border: solid#8E7D61;
+        color: #8E7D61;
+        align-self: center;
+    }
+    
+    .infoBoxText {
+        padding: 10px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        margin-right: 5px; 
+    }
+
+    .infoBoxText1 {
+        padding: 10px; 
+        margin-top: 0px; 
+        margin-bottom: 0px; 
+        margin-right: 5px; 
+    }
+
+    .text-container1 {
+        font-size: 40px; 
+    }
+
+    .text-container2 {
+        font-size: 40px; 
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px; 
+
+    }
+    .text-container3 {
+        font-size: 40px; 
+        margin: 40px;
+    }
+    
+    .breadText {
+        font-size: 25px; 
+    }
+
+    .part3 {
+        display: flex; 
+        justify-content: space-between;
+
+    }
+  
+
+    .rifleCar {
+        border: solid #8E7D61;
+        width: 200%; 
+    }
+
+    .gold {
+        text-align: center;
+        margin-bottom: 40px; 
+    }
+
+    .golddiv {
+        margin-top: 50px; 
+    }
+
+    .imagesPartTwo {
+        display: flex; 
+    
+    }
+
+
+  
+
+
+  } 
